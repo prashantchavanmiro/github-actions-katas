@@ -39,7 +39,7 @@ jobs:
           path: .
   Docker-image:
     runs-on: ubuntu-latest
-    needs: [ Build ]
+    needs: [ my-job ]
     permissions:
       packages: write
     steps:
